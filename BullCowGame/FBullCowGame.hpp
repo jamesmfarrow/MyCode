@@ -62,7 +62,7 @@ private:
     int32 MyCurrentTry;
     FString MyHiddenWord;
     bool bGameIsWon;
-    std::vector<FString> HiddeWords;
+    std::vector<FString> HiddenWords;
     
     bool IsIsogram(FString) const; // helper method in private
     bool IsLowerCase(FString) const; //helper metgod in private

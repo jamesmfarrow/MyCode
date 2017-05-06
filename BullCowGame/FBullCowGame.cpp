@@ -39,9 +39,9 @@ void FBullCowGame::Reset()
     
     int RandomWord = 0 + rand() % 4;
     
-    HiddeWords = { "one", "four", "xcode", "planet", "helping" };
+    HiddenWords = { "one", "four", "xcode", "planet", "helping" };
     
-    const FString HIDDEN_WORD = HiddeWords[RandomWord];
+    const FString HIDDEN_WORD = HiddenWords[RandomWord];
     MyHiddenWord = HIDDEN_WORD;
     
     MyCurrentTry = 1;
