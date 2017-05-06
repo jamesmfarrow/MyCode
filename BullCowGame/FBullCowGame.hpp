@@ -12,6 +12,9 @@
 #define FBullCowGame_hpp
 
 #include <string>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 
 
 //make syntax unreal friendly
@@ -59,6 +62,7 @@ private:
     int32 MyCurrentTry;
     FString MyHiddenWord;
     bool bGameIsWon;
+    std::vector<FString> HiddeWords;
     
     bool IsIsogram(FString) const; // helper method in private
     bool IsLowerCase(FString) const; //helper metgod in private

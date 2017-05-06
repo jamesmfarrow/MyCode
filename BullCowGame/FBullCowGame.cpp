@@ -10,6 +10,7 @@
 #include "FBullCowGame.hpp"
 #include <map>
 
+
 //syntax for unreal friendly
 #define TMap std::map
 
@@ -34,8 +35,13 @@ int32 FBullCowGame::GetMaxTries() const {
 
 void FBullCowGame::Reset()
 {
+    srand(static_cast<unsigned int>(time(NULL)));
     
-    const FString HIDDEN_WORD = "planet"; //this MUST be an isogram
+    int RandomWord = 0 + rand() % 4;
+    
+    HiddeWords = { "one", "four", "xcode", "planet", "helping" };
+    
+    const FString HIDDEN_WORD = HiddeWords[RandomWord];
     MyHiddenWord = HIDDEN_WORD;
     
     MyCurrentTry = 1;

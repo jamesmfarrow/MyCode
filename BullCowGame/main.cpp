@@ -53,6 +53,8 @@ int main(int32 argc, const char * argv[]) {
 // introduce the game
 void PrintIntro()
 {
+    BCGame.Reset();
+    
     std::cout << "Welcome to Bulls and Cows, a fun word game.\n";
     std::cout << std::endl;
     std::cout << "          }   {         ___ " << std::endl;
@@ -71,8 +73,6 @@ void PrintIntro()
 //plays a single game to completion
 void PlayGame()
 {
-    
-    BCGame.Reset();
     
     int32 MaxTries = BCGame.GetMaxTries();
     
